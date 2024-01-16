@@ -1,0 +1,241 @@
+body
+{
+	font-family: sans-serif;
+	background: #222;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+hgroup
+{
+	background: #111;
+	margin: 0;
+	height: 4em;
+	border-bottom: 2px solid #666;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1
+{
+	position: absolute;
+	left: 1em;
+	color: #fff;
+}
+
+h2
+{
+	position: absolute;
+	right: 1em;
+	color: #888;
+}
+
+.container
+{
+	margin: 12px;
+	position: relative;
+}
+
+footer
+{
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+	color: #fff4;
+}
+
+.screen
+{
+	float: left;
+	margin: 0em;
+	margin-right: 1em;
+}
+
+.screen canvas
+{
+	border: 2px solid #666;
+	border-radius: 1em;
+}
+
+.control
+{
+	border: 2px solid #666;
+	border-radius: .5em;
+	padding: 1em;
+	background: #111;
+	color: #FFF;
+	font-size: 20px;
+	font-family: sans-serif;
+	overflow: hidden;
+}
+
+.control ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.control li
+{
+	margin-bottom: 2px;
+	width: 100%;
+}
+
+.inline
+{
+	display: table;
+}
+
+.inline div
+{
+	display: table-cell;
+	position: relative;
+}
+
+.inline div:nth-child(n+2)
+{
+	padding-left: 10px;
+}
+
+.control button
+{
+	color: #FFF;
+	background: #333;
+	font-size: 25px;
+	border: 2px solid #888;
+	border-radius: .25em;
+	margin-bottom: 8px;
+}
+
+.control button:hover
+{
+	background: #444;
+	cursor: pointer;
+}
+
+.control button:active
+{
+	background: #222;
+}
+
+.control input[type=radio]
+{
+	width: 26px;
+	height: 26px;
+	vertical-align: -6px;
+	appearance: none;
+	border: 2px solid #888;
+	border-radius: 100%;
+	background: #111;
+	transition: 100ms;
+}
+
+.control input[type=radio]:hover
+{
+	border-color: #fff;
+	background: #444;
+	cursor: pointer;
+}
+
+.control input[type=radio]:checked
+{
+	background: radial-gradient(ellipse at center,  #888 0%,#888 47%,#888 47%,#111 47%,#111 48%);
+}
+
+.control input[type=radio]:checked:hover
+{
+	background: radial-gradient(ellipse at center,  #fff 0%,#fff 47%,#fff 47%,#444 47%,#444 48%);
+}
+
+.control input[type=radio]:active
+{
+	background: #222;
+}
+
+.control input[type=radio]:disabled {
+  opacity: 0.84;
+  cursor: not-allowed;
+}
+
+.control input[type=checkbox] {
+  width: 26px;
+  height: 26px;
+  vertical-align: -8px;
+  appearance: none;
+  border: 2px solid #888;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: 100ms;
+  cursor: pointer;
+}
+
+.control input[type=checkbox]:hover
+{
+	border-color: #fff;
+	background: #444;
+	cursor: pointer;
+}
+
+.control input[type=checkbox]:active
+{
+	background: #222;
+}
+
+.control input[type=checkbox]:checked
+{
+	background: radial-gradient(ellipse at center,  #888 0%,#888 47%,#888 47%,#111 47%,#111 48%);
+}
+
+.control input[type=checkbox]:checked:hover
+{
+	background: radial-gradient(ellipse at center,  #fff 0%,#fff 47%,#fff 47%,#444 47%,#444 48%);
+}
+
+.control input[type=checkbox]:disabled {
+  opacity: 0.84;
+  cursor: not-allowed;
+}
+
+.control label
+{
+	color: #888;
+	font-size: 10px;
+	position: absolute;
+	top: -1.5em;
+	left: 15%;
+}
+
+input[type=number]
+{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	background: #111;
+	color: #fff;
+	border: 2px solid #888;
+	border-radius: 40px;
+	transition: 100ms;
+}
+
+input[type=number]:focus
+{
+	outline: none;
+	border: 2px solid #fff;
+}
+
+input[type=number]:disabled
+{
+	opacity: 0.75;
+	color: #888;
+	cursor: not-allowed;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button
+{
+	appearance: none;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<hgroup>
+			<h1>GJK+EPA Testing</h1>
+			<h2>Convex polygon collision detection/response</h2>
+		</hgroup>
+		<div class="container">
+			<div class="screen">
+				<canvas width="800" height="480" class="myCanvas" id="myCanvas">Cannot create canvas</canvas>
+			</div>
+			<div class="control">
+				<ul>
+					<li>
+						<button type="button" id="randomize">Randomize</button>
+					</li>
+					<li>
+						<input type="checkbox" id="collide">Collision
+					</li>
+					<li>
+						<input type="checkbox" id="debug">Debugging
+					</li>
+					<li>
+						<div class="inline" style="padding-top: 1em">
+							<div>
+								<input type="radio" id="activeA" name="active" checked=true>
+								<label>Active</label>
+							</div>
+							<div>
+								<input type="number" id="vertexcountA" step=1 value=8 style="width:3em">
+								<label>Vertices</label>
+							</div>
+							<div>
+								<input type="number" id="Ax" step="any" value=0>
+								<label>X position</label>
+							</div>
+							<div>
+								<input type="number" id="Ay" step="any" value=0>
+								<label>Y position</label>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="inline">
+							<div><input type="radio" id="activeB" name="active"></div>
+							<div><input type="number" id="vertexcountB" step=1 value=8 style="width:3em"></div>
+							<div><input type="number" id="Bx" step="any" value=0></div>
+							<div><input type="number" id="By" step="any" value=0></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<footer>Implemented by TheMultiX PGDM</footer>
+		<script type="module" src="main.js"></script>
+	</body>
+</html>
