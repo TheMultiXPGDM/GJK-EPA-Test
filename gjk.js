@@ -75,7 +75,7 @@ export function GJK (A,B)
 			d = acp;
 			continue;
 		}
-		if (Vector.dot(acp,co) > 0)
+		if (Vector.dot(bcp,co) > 0)
 		{
 			a = b;
 			b = c;
@@ -151,7 +151,7 @@ export function EPA (A,B,polytope)
 		
 		p = support(A,B,minnormal);
 		dist = Vector.dot(minnormal,p);
-		if (Math.abs(dist - mindist) > 0.0001)
+		if (Math.abs(dist - mindist) > eps)
 		{
 			mindist = Infinity;
 			for (var i = polysize - 1; i >= minindex; i--)
